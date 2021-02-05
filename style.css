@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+/* 
+colors:
+  #ea512d
+  rgba(234, 80, 45, 0.685)
+  #d3b44c
+  #2e1411
+
+*/
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+  margin: 0;
+  background-color: #d3b44c;
+  background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ea512d' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E"); 
+  
+  font-weight: 700;
+  text-align: center;
+  color: #2e1411; 
+}
+
+.quote-container {
+  width: auto; 
+  max-width: 900px;
+
+  border-radius: 10px;
+  padding: 1.5em 2em;
+  margin: auto 10px; 
+
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.quote-text {
+  font-size: 2.25rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 1em; 
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1em;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  border: solid 1px #2e1411;
+  border-radius: 10px;
+  background: #d3b44c;
+  background: #2e1411; 
+  box-shadow: 0 0.3rem rgba(234, 80, 45, 0.685);
+
+  font-size: 1.2rem;
+  color: #d3b44c; 
+
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  filter: brightness(103%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+
+.twitter-button:hover {
+  color: #38a1f3; 
+}
+
+.fa-twitter {
+  font-size: 1.5rem;
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+
+  border: 16px solid #f7f7f7; 
+  border-top: 16px solid #ea512d; 
+  border-radius: 50%;
+
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1000px) {
+
+  html {
+    font-size: 125%;
+  }
+
+}
